@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사운드 시연</title>
+
+        <!-- sound -->
+    <audio id='audio_play' src='../static/story_sound/voice3.mp3'></audio> 
+    <script type="text/javascript"> 
+    function play() { 
+        var audio = document.getElementById('audio_play'); 
+        if (audio.paused) { 
+            audio.play(); 
+        }else{ 
+            audio.pause(); 
+            audio.currentTime = 0 
+        } 
+    } 
+</script>
+
+</head>
+<body>
+
+    <img onclick="play()" src="../static/sorce/spicker.png" width="75px">
+    <span style="bold; font-size:1.1em;">"이건 카카오 티티에스인데, 차분한 낭독체입니다."</span>
+    
+</body>
+</html>

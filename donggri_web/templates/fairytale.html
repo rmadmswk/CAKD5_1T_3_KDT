@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/fairytale.css">
+    <title>Document</title>
+    <script>
+        var num = 1;
+        var filelist = {{storyli|tojson}} ;
+        function changePic(idx) { ///idx라는 매개변수를 사용한 changePic 이름의 함수 생성
+          if (idx) {
+            if (num>=8) return; //num이 maxnum일때 num++ 이전에 강제종료 
+            num++; //다음 버튼을 누르면 idx값이 1이 되어 num의 값이 1만큼 증가
+          } else {
+            if (num <= 1) return; //num이 0일때 num-- 이전에 강제종료
+            num--; //이전 버튼을 누르면 idx값이 0이 되어 num의 값이 1만큼 감소
+          }
+          var imgTag = document.getElementById("photo");
+          var file_url = "../static/story_img/"+ num + ".png" ;
+          imgTag.setAttribute("src", file_url ); //id값이 photo인 이미지태그 선택 후,//src 속성값을 수정 
+          document.getElementById("story").textContent= filelist[num-1];     //id값이 imgname인 값 선택 후, 내용 수정      
+        }
+      </script>
+</head>
+<body>
+    <div id = "img-center">
+        <div class="mainpage">
+            <img id = "photo" src = "../static/story_img/1.png" width="850"  >
+        </div>
+        <div class="story">
+            <h1 id ="story"> 이야기 내용 </h1>
+        </div>
+    </div>
+    <div class="buttoncon">
+        <p>
+          <button class="button" onclick="changePic(0);">이전</button>    <!--버튼-->
+          <button class="button" onclick="changePic(1);">다음</button>
+        </p>
+    </div>
+</body>
+</html>
