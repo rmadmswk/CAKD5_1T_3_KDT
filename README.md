@@ -12,7 +12,7 @@
 - OCR 라이브러리들이 모두 AI허브 어린이용 손글씨가 포함된 손글씨 데이터를 사용했는데, 결과값이 제일 좋았던게 kakao API였고, 
 - 필요한 어린이 손글씨 데이터를 구하지 못했고, 증식을 통해 늘려보려 했지만 짧은 시간안에 결과를 낼 수 있을지 확신 할 수 없어 못함
 - 솔루션을 개발하기 위해 라이브러리를 조사하면서 찾은 rq transformer를 사용하지 못해 자유로운 솔루션에서 형식을 추가하면서 기술력과 내용이 약해짐 
-- rq transformer : 테디베어
+# rq transformer : 테디베어
 ![image](https://user-images.githubusercontent.com/83449928/175809593-840ac6fe-c3d3-4f1b-8a74-a7526661f514.png)
 # 배운점
 - kakao OCR 라이브러리 document를 통해 구성하는 모델과 진행방식 파악
