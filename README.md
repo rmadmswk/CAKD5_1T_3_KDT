@@ -18,6 +18,7 @@
 - kakao OCR 라이브러리 document를 통해 구성하는 모델과 진행방식 파악
 - 글자 탐지 모델 : RCNN, single shot detector, East, yolo
 - 글자 인식 모델 : CNN, RNN, CTC
+- kakao OCR,TTS,Py-hanspell,Konlpy 라이브러리 
 
 메뉴
 ![image](https://user-images.githubusercontent.com/83449928/175809653-4c20a6e1-7db1-4ad5-b848-c90535e6aad1.png)
